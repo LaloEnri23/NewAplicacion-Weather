@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #BA9B8D;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #585651;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+aside {
+    flex: 0 0 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+article {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    background-color: #814A38;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: #516754;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+#city-forecast {
+    margin-top: 20px;
+
+}
+
+#forecast-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    color:blue;
+    margin-bottom: 10 px;;
+}
+
+
+#recent-search-container{
+    padding-inline-start: 0;
+
+} 
+
+#city-details {
+
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-style: groove;
+}
+
+#city-forecast {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.btn{
+    display:block;
+    width: 300px;
+    font-size:20px;
+    text-align: center;
+    margin: 2px;
+}
+
+
+    @media (max-width: 768px) {
+
+        .main-container {
+
+            flex-direction: column;
+    }
+
+    aside {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
